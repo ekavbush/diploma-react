@@ -13,18 +13,18 @@ const Price = ()=>{
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="discover_item_inner">
-                                <PriceItem h4={"Брауни"} description={"Насыщенный шоколадный крем в шоколадном бисвите"}/>
-                                <PriceItem h4={"Морковный кекс"} description={"Сочный бисквит из моркови"}/>
-                                <PriceItem h4={"Двойной шоколадный пай"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "}/>
-                                <PriceItem h4={"Имбирный пряник"} description={"Пряник на меду с добавлением имбиря, корицы, мускатного ореха"}/>
+                                <PriceItem name={"Брауни"} description={"Насыщенный шоколадный крем в шоколадном бисвите"} price={"$8.99"}/>
+                                <PriceItem name={"Морковный кекс"} description={"Сочный бисквит из моркови"} price={"$8.99"}/>
+                                <PriceItem name={"Двойной шоколадный пай"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
+                                <PriceItem name={"Имбирный пряник"} description={"Пряник на меду с добавлением имбиря, корицы, мускатного ореха"} price={"$8.99"}/>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="discover_item_inner">
-                                <PriceItem h4={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "}/>
-                                <PriceItem h4={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "}/>
-                                <PriceItem h4={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "}/>
-                                <PriceItem h4={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "}/>
+                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
+                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
+                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
+                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
                             </div>
                         </div>
                     </div>

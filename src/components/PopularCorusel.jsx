@@ -9,19 +9,28 @@ const PopularCorusel = ()=>{
                 <h2>Наши популярные торты</h2>
                 <h5> Seldolor sit amet consect etur</h5>
             </div>
-            <OwlCarousel>
-            <div className="cake_feature_slider owl-carousel">
+            <OwlCarousel
+                className = {"owl-theme"}
+                items= {"4"}
+                autoplay = {"true"}
+                nav = {"true"}
+                loop = {"true"}
+                rewind={"true"}
+            />
+
+
+            {/*<div className="cake_feature_slider owl-carousel owl-theme home-slider">*/}
                 <div className="item">
-                    <div className="cake_feature_item">
+                    {/*<div className="cake_feature_item">*/}
                         <div className="cake_img">
                             <img src="../img/cake-feature/c-feature-1.jpg" alt="" />
                         </div>
-                        <div className="cake_text">
+                        {/*<div className="cake_text">
                             <h4>$29</h4>
                             <h3>Strawberry Cupcakes</h3>
                             <NavLink className="pest_btn" to="#">В корзину</NavLink>
-                        </div>
-                    </div>
+                        </div>*/}
+                    {/*</div>*/}
                 </div>
                 <div className="item">
                     <div className="cake_feature_item">
@@ -59,8 +68,7 @@ const PopularCorusel = ()=>{
                         </div>
                     </div>
                 </div>
-            </div>
-            </OwlCarousel>
+            {/*</div>*/}
         </div>
     );
 }

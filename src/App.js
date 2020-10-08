@@ -14,8 +14,9 @@ import SearchBox from "./components/SearchBox";
 import WelcomeBakery from "./components/WelcomeBakery";
 import SpecialRecipes from "./components/SpecialRecipes";
 import Newsletter from "./components/Newsletter";
+import FullPrice from "./components/FullPrice";
 
-function App() {
+function App(props) {
   return (
       <div>
         <BrowserRouter>
@@ -34,7 +35,7 @@ function App() {
           <Route path="/menu" render={()=>{
                 return <div>
                     <BannerAria h3={"Прайс-Лист"} link={"/menu"} name={"Прайс-лист"}/>
-                    <Price />
+                    <FullPrice getProducts={props.getProducts} />
                 </div>
           }}/>
           <Route path="/shop" render={()=>{
