@@ -12,7 +12,7 @@ const ClientSays =()=>{
                         <div className="item">
                             <div className="media">
                                 <div className="d-flex">
-                                    <img src="img/client/client-1.png" alt="" />
+                                    <img src="../img/client/client-1.png" alt="" />
                                     <h3>“</h3>
                                 </div>
                                 <div className="media-body">
@@ -24,7 +24,7 @@ const ClientSays =()=>{
                         <div className="item">
                             <div className="media">
                                 <div className="d-flex">
-                                    <img src="img/client/client-1.png" alt="" />
+                                    <img src="../img/client/client-1.png" alt="" />
                                 </div>
                                 <div className="media-body">
                                     <p>Когда хочется побаловать семью, беру капустный пирог. А для праздников или встреч с

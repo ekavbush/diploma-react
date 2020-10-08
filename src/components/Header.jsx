@@ -11,8 +11,8 @@ const Header = ()=>{
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <NavLink className="navbar-brand" to="index.html">
-                            <img src="img/logo.png" alt="" />
-                            <img src="img/logo-2.png" alt="" />
+                            <img src="../img/logo.png" alt="" />
+                            <img src="../img/logo-2.png" alt="" />
                         </NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
