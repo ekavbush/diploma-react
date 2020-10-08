@@ -1,6 +1,8 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
 import PopularCorusel from "./PopularCorusel";
+import PopCarousel from "./PopularCorusel";
+import Carousel from "./Carousel";
 
 const WelcomeBakery = ()=>{
     return(
@@ -29,7 +31,9 @@ const WelcomeBakery = ()=>{
                         </div>
                     </div>
                 </div>
-               <PopularCorusel />
+               {/*<PopularCorusel />*/}
+               {/*<PopCarousel />*/}
+               <Carousel />
             </div>
         </section>
     );
