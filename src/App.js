@@ -14,6 +14,7 @@ import SearchBox from "./components/SearchBox";
 import WelcomeBakery from "./components/WelcomeBakery";
 import SpecialRecipes from "./components/SpecialRecipes";
 import Newsletter from "./components/Newsletter";
+import {getProducts} from "./State";
 import FullPrice from "./components/FullPrice";
 
 function App(props) {
@@ -27,7 +28,7 @@ function App(props) {
                       <WelcomeBakery />
                       <SpecialRecipes />
                       <Services />
-                      <Price />
+                      <Price getDiscoverProducts={props.getDiscoverProducts}/>
                       <ClientSays />
                       <OurChefs />
                   </div>

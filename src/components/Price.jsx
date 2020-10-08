@@ -1,7 +1,31 @@
 import React from "react";
 import PriceItem from "./PriceItem";
 
-const Price = ()=>{
+const Price = (props)=>{
+    let products = props.getDiscoverProducts;
+    //console.log(Object.values(products));
+    //console.log(Object.values(products).length);
+    // let productsCounts = Object.key(prod1).length;
+    let productsCounts = Object.values(products).length;
+    let productsItems1 = [];
+    let productsItems2 = [];
+    for (let i = 0; i < productsCounts; i++) {
+        if(i<productsCounts/2){
+            productsItems1.push(<PriceItem
+                key={i}
+                name={products[i].name}
+                description={products[i].description}
+                price={products[i].price}
+            />);
+        }else{
+            productsItems2.push(<PriceItem
+                key={i}
+                name={products[i].name}
+                description={products[i].description}
+                price={products[i].price}
+            />);
+        }
+    }
     return (
         <section className="discover_menu_area">
             <div className="discover_menu_inner">
@@ -13,18 +37,12 @@ const Price = ()=>{
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="discover_item_inner">
-                                <PriceItem name={"Брауни"} description={"Насыщенный шоколадный крем в шоколадном бисвите"} price={"$8.99"}/>
-                                <PriceItem name={"Морковный кекс"} description={"Сочный бисквит из моркови"} price={"$8.99"}/>
-                                <PriceItem name={"Двойной шоколадный пай"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
-                                <PriceItem name={"Имбирный пряник"} description={"Пряник на меду с добавлением имбиря, корицы, мускатного ореха"} price={"$8.99"}/>
+                                {productsItems1}
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="discover_item_inner">
-                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
-                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
-                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
-                                <PriceItem name={"Double Chocolate Pie"} description={"Chocolate puding, vanilla, fruite rasberry jam milk "} price={"$8.99"}/>
+                                {productsItems2}
                             </div>
                         </div>
                     </div>

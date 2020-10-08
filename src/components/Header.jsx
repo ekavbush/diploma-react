@@ -10,7 +10,7 @@ const Header = ()=>{
             <div className="main_menu_area">
                 <div className="container">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                        <NavLink className="navbar-brand" to="index.html">
+                        <NavLink className="navbar-brand" to="/">
                             <img src="../img/logo.png" alt="" />
                             <img src="../img/logo-2.png" alt="" />
                         </NavLink>
@@ -25,7 +25,7 @@ const Header = ()=>{
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
-                                <li><NavLink to="index.html">Главная</NavLink></li>
+                                <li><NavLink to="/">Главная</NavLink></li>
                                 <li><NavLink to="cake.html">Наша выпечка</NavLink></li>
                                 <li><NavLink to="/menu">Прайс-лист</NavLink></li>
                                 <li className="dropdown submenu">
