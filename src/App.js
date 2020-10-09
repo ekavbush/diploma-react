@@ -56,6 +56,12 @@ function App(props) {
                     <OurChefs />
                 </div>
           }}/>
+            <Route path="/our-team" render={()=>{
+                return <div>
+                    <BannerAria h3={"Наша команда"} link={"/our-team"} name={"Наши волшебники"}/>
+                    <OurChefs />
+                </div>
+            }}/>
           <Footer />
           <SearchBox />
 
