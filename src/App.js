@@ -18,6 +18,8 @@ import {getProducts} from "./State";
 import FullPrice from "./components/FullPrice";
 import OurMission from "./components/OurMission";
 import OurBakeryIdea from "./components/OurBakeryIdea";
+import Error from "./components/Error";
+import PageUnderConstruction from "./components/PageUnderConstruction";
 
 function App(props) {
   return (
@@ -35,16 +37,16 @@ function App(props) {
                       <OurChefs />
                   </div>
           }}/>
+          <Route path="/cake" render={()=>{
+                return <div>
+                    <BannerAria h3={"Наша выпечка"} link={"/cake"} name={"Наши вкусности"}/>
+                    <PageUnderConstruction />
+                </div>
+          }}/>
           <Route path="/menu" render={()=>{
                 return <div>
                     <BannerAria h3={"Прайс-Лист"} link={"/menu"} name={"Прайс-лист"}/>
                     <FullPrice getProducts={props.getProducts} />
-                </div>
-          }}/>
-          <Route path="/shop" render={()=>{
-                return <div>
-                    <BannerAria h3={"Магазин"} link={"/shop"} name={"Магазин"}/>
-
                 </div>
           }}/>
           <Route path="/about-us" render={()=>{
@@ -60,6 +62,30 @@ function App(props) {
                 return <div>
                     <BannerAria h3={"Наша команда"} link={"/our-team"} name={"Наши волшебники"}/>
                     <OurChefs />
+                </div>
+            }}/>
+            <Route path="/shop" render={()=>{
+                return <div>
+                    <BannerAria h3={"Магазин"} link={"/shop"} name={"Магазин"}/>
+                    <PageUnderConstruction />
+                </div>
+            }}/>
+            <Route path="/product-details" render={()=>{
+                return <div>
+                    <BannerAria h3={"Карточка товара"} link={"/product-details"} name={"Карточка товара"}/>
+                    <PageUnderConstruction />
+                </div>
+            }}/>
+            <Route path="/cart" render={()=>{
+                return <div>
+                    <BannerAria h3={"Корзина"} link={"/cart"} name={"Корзина"}/>
+                    <PageUnderConstruction />
+                </div>
+            }}/>
+            <Route path="/contact" render={()=>{
+                return <div>
+                    <BannerAria h3={"Наши контакты"} link={"/contact"} name={"Наши контакты"}/>
+                    <PageUnderConstruction />
                 </div>
             }}/>
           <Footer />

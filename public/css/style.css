@@ -2564,7 +2564,7 @@ i:before {
 
 .service_item i {
   font-size: 70px;
-  line-height: 70px;
+  line-height: 70px;1
   color: #fff;
 }
 
@@ -6651,6 +6651,12 @@ i:before {
 
 /* End Footer Area css
 ============================================================================================ */
+
+.bread-class:before{
+  content: url(../img/bread2.png);
+  opacity: 0.3;
+}
+
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

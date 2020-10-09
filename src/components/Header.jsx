@@ -26,7 +26,7 @@ const Header = ()=>{
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-auto">
                                 <li><NavLink to="/">Главная</NavLink></li>
-                                <li><NavLink to="cake.html">Наша выпечка</NavLink></li>
+                                <li><NavLink to="/cake">Наша выпечка</NavLink></li>
                                 <li><NavLink to="/menu">Прайс-лист</NavLink></li>
                                 <li className="dropdown submenu">
                                     <NavLink className="dropdown-toggle" data-toggle="dropdown" to="#" role="button"
@@ -43,11 +43,11 @@ const Header = ()=>{
                                        aria-haspopup="true" aria-expanded="false">Магазин</NavLink>
                                     <ul className="dropdown-menu">
                                         <li><NavLink to="/shop">Магазин</NavLink></li>
-                                        <li><NavLink to="product-details.html">Продукция (в деталях)</NavLink></li>
-                                        <li><NavLink to="cart.html">Корзина</NavLink></li>
+                                        <li><NavLink to="/product-details">Карточка товара</NavLink></li>
+                                        <li><NavLink to="/cart">Корзина</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to="contact.html">Наши контакты</NavLink></li>
+                                <li><NavLink to="/contact">Наши контакты</NavLink></li>
                             </ul>
                         </div>
                     </nav>
