@@ -32,7 +32,7 @@ const Header = ()=>{
                                     <NavLink className="dropdown-toggle" data-toggle="dropdown" to="#" role="button"
                                        aria-haspopup="true" aria-expanded="false">О нас</NavLink>
                                     <ul className="dropdown-menu">
-                                        <li><NavLink to="about-us.html">О нас</NavLink></li>
+                                        <li><NavLink to="/about-us">О нас</NavLink></li>
                                         <li><NavLink to="our-team.html">Наша команда</NavLink></li>
                                     </ul>
                                 </li>

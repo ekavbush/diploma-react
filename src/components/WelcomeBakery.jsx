@@ -10,15 +10,18 @@ const WelcomeBakery = ()=>{
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="main_title">
-                                <h2>Добро пожаловать к нам в Пекарню</h2>
-                                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                                    nisi ut aliquid ex ea commodi consequatur uis autem vel eum.</p>
+                                <h2>Мы всегда Вам рады</h2>
+                                <p>Любите домашнюю ароматную выпечку или хлеб? Но у Вас нет сил, времени или желания делать это самостоятельно?
+                                    Рады будем Вам помочь!
+                                </p>
                             </div>
                             <div className="welcome_left_text">
-                                <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-                                    it is pain, but because occasionally circumstances occur in which toil and pain can procure
-                                    him some great pleasure. To take a trivial example, which of us ever undertakes laborious
-                                    physical exercise.</p>
+                                <p>Уважаемые любители нежнейших ароматов выпечки, мы рады помочь Вам накормить семью вкусным
+                                    и ароматным бездрожжевым ржаным хлебом. Такой хлебушек может храниться неделю! Если конечно,
+                                    у Вас хватит сил его хранить.<br/>
+                                    Хотите порадовать себя или близких домашним синабоном? Пирогом с капустой? Тогда Вам к нам!
+                                    С полным ассортиментом нашей волшебной выпечки Вы можете ознакомится на данном сайте!
+                                </p>
                                 <NavLink className="pink_btn" to="#">Узнать больше</NavLink>
                             </div>
                         </div>

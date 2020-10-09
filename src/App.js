@@ -16,6 +16,8 @@ import SpecialRecipes from "./components/SpecialRecipes";
 import Newsletter from "./components/Newsletter";
 import {getProducts} from "./State";
 import FullPrice from "./components/FullPrice";
+import OurMission from "./components/OurMission";
+import OurBakeryIdea from "./components/OurBakeryIdea";
 
 function App(props) {
   return (
@@ -43,6 +45,15 @@ function App(props) {
                 return <div>
                     <BannerAria h3={"Магазин"} link={"/shop"} name={"Магазин"}/>
 
+                </div>
+          }}/>
+          <Route path="/about-us" render={()=>{
+                return <div>
+                    <BannerAria h3={"Немного о нас"} link={"/about-us"} name={"О нас"}/>
+                    <OurBakeryIdea />
+                    <OurMission />
+                    <ClientSays />
+                    <OurChefs />
                 </div>
           }}/>
           <Footer />
