@@ -66,7 +66,7 @@ const Footer = ()=>{
 
                         <ul>
                             <li><h5><NavLink target="_blank" to="https://www.templateshub.net">Templates Hub</NavLink></h5></li>
-                            <li><span><i className="fa fa-umbrella"></i>  Разработка сайта: EV</span></li>
+                            <li><span><i className="fa fa-umbrella fa-2x"></i>  Разработка сайта: EV</span></li>
                         </ul>
 
                         <div className="float-right">

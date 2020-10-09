@@ -2,6 +2,7 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+import ProductCard from "./ProductCard";
 
 const PopularCorusel = ()=>{
 
@@ -18,49 +19,36 @@ const PopularCorusel = ()=>{
             dots
         >
             <div className="item">
-                <div className="cake_feature_item">
-                    <div className="cake_img">
-                        <img src="../img/cake-feature/c-feature-1.jpg" alt=""/>
-                    </div>
-                    <div className="cake_text">
-                        <h4>150 р.</h4>
-                        <h3>Хлеб ржаной на закваске</h3>
-                    </div>
-                </div>
+                <ProductCard
+                    name={"Хлеб ржаной на закваске"}
+                    img={"../img/cake-feature/c-feature-1.jpg"}
+                    price={"150 р."}
+                    header_class={"cake_feature_item"}
+                />
             </div>
             <div className="item">
-                <div className="cake_feature_item">
-                    <div className="cake_img">
-                        <img src="../img/cake-feature/c-feature-2.jpg" alt=""/>
-                    </div>
-                    <div className="cake_text">
-                        <h4>95 р.</h4>
-                        <h3>Домашний синабон</h3>
-                    </div>
-                </div>
+                <ProductCard
+                    name={"Домашний синабон"}
+                    img={"../img/cake-feature/c-feature-2.jpg"}
+                    price={"95 р."}
+                    header_class={"cake_feature_item"}
+                />
             </div>
             <div className="item">
-                <div className="cake_feature_item">
-                    <div className="cake_img">
-                        <img src="../img/cake-feature/c-feature-3.jpg" alt=""/>
-                    </div>
-                    <div className="cake_text">
-                        <h4>... р.</h4>
-                        <h3>Пирог с капустой</h3>
-                    </div>
-                </div>
+                <ProductCard
+                    name={"Пирог с капустой"}
+                    img={"../img/cake-feature/c-feature-3.jpg"}
+                    price={"... р."}
+                    header_class={"cake_feature_item"}
+                />
             </div>
             <div className="item">
-
-                <div className="cake_feature_item">
-                    <div className="cake_img">
-                        <img src="../img/cake-feature/c-feature-4.jpg" alt=""/>
-                    </div>
-                    <div className="cake_text">
-                        <h4>...р.</h4>
-                        <h3>Морковный кекс</h3>
-                    </div>
-                </div>
+                <ProductCard
+                    name={"Морковный кекс"}
+                    img={"../img/cake-feature/c-feature-4.jpg"}
+                    price={"... р."}
+                    header_class={"cake_feature_item"}
+                />
             </div>
         </OwlCarousel>
     </div>

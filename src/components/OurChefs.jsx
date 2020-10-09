@@ -18,7 +18,7 @@ const OurChefs = ()=>{
                     <div className="col-lg-3 col-6">
                         <div className="chef_item">
                             <div className="chef_img">
-                                <img className="img-fluid" src="img/chef/chef-1.jpg" alt="" />
+                                <img className="img-fluid" src="img/chef/catchef.jpg" alt="" />
                                     <ul className="list_style">
                                         <li><NavLink to="#"><i className="fa fa-facebook-square"></i></NavLink></li>
                                     </ul>
@@ -30,7 +30,7 @@ const OurChefs = ()=>{
                     <div className="col-lg-3 col-6">
                         <div className="chef_item">
                             <div className="chef_img">
-                                <img className="img-fluid" src="img/chef/chef-2.jpg" alt=""/>
+                                <img className="img-fluid" src="img/chef/ourchef-2.jpg" alt=""/>
                                     <ul className="list_style">
                                         <li><NavLink to="#"><i className="fa fa-twitter"></i></NavLink></li>
                                         <li><NavLink to="#"><i className="fa fa-facebook-square"></i></NavLink></li>

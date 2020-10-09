@@ -6656,6 +6656,7 @@ i:before {
   content: url(../img/bread2.png);
   opacity: 0.3;
 }
+.fa-bread:before{content:"\f7ec"}
 
 /*---------------------------------------------------- */
 
