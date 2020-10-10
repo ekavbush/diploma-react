@@ -43,7 +43,7 @@ const Header = ()=>{
                                        aria-haspopup="true" aria-expanded="false">Магазин</NavLink>
                                     <ul className="dropdown-menu">
                                         <li><NavLink to="/shop">Магазин</NavLink></li>
-                                        <li><NavLink to="/product-details">Карточка товара</NavLink></li>
+                                        {/*<li><NavLink to="/product-details">Карточка товара</NavLink></li>*/}
                                         <li><NavLink to="/cart">Корзина</NavLink></li>
                                     </ul>
                                 </li>

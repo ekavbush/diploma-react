@@ -3,9 +3,7 @@ import PriceItem from "./PriceItem";
 
 const Price = (props)=>{
     let products = props.getDiscoverProducts;
-    //console.log(Object.values(products));
-    //console.log(Object.values(products).length);
-    // let productsCounts = Object.key(prod1).length;
+
     let productsCounts = Object.values(products).length;
     let productsItems1 = [];
     let productsItems2 = [];
@@ -16,6 +14,7 @@ const Price = (props)=>{
                 name={products[i].name}
                 description={products[i].description}
                 price={products[i].price}
+                id={products[i].id}
             />);
         }else{
             productsItems2.push(<PriceItem
@@ -23,6 +22,7 @@ const Price = (props)=>{
                 name={products[i].name}
                 description={products[i].description}
                 price={products[i].price}
+                id={products[i].id}
             />);
         }
     }

@@ -9,7 +9,9 @@ const ProductDetails = ()=>{
     console.log(idProd);
     let product = getProduct(+idProd);//так как id с нуля
 
-    return(<section className="product_details_area p_100">
+    return(<div>
+
+        <section className="product_details_area p_100">
         <div className="container">
 
             <ProductDetailsPrice img={product.img}
@@ -21,7 +23,7 @@ const ProductDetails = ()=>{
 
         </div>
     </section>
-
+    </div>
     );
 }
 export default ProductDetails;

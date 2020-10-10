@@ -22,6 +22,8 @@ import Error from "./components/Error";
 import PageUnderConstruction from "./components/PageUnderConstruction";
 import ProductsCatalog from "./components/ProductsCatalog";
 import ProductDetails from "./components/ProductDetails";
+import Carousel_1 from "./components/CarouserCook";
+
 
 function App(props) {
   return (
@@ -41,7 +43,7 @@ function App(props) {
           }}/>
           <Route path="/cake" render={()=>{
                 return <div>
-                    <BannerAria h3={"Наша выпечка"} link={"/cake"} name={"Наши вкусности"}/>
+                    {/*<BannerAria h3={"Наша выпечка"} link={"/cake"} name={"Наши вкусности"}/>*/}
                     <ProductsCatalog getProducts={props.getProducts}/>
                 </div>
           }}/>
@@ -72,12 +74,12 @@ function App(props) {
                     <PageUnderConstruction />
                 </div>
             }}/>
-            <Route path="/product-details" render={()=>{
-                return <div>
-                    <BannerAria h3={"Карточка товара"} link={"/product-details"} name={"Карточка товара"}/>
-                    <ProductDetails />
-                </div>
-            }}/>
+            {/*<Route path="/product-details" render={()=>{*/}
+            {/*    return <div>*/}
+            {/*        <BannerAria h3={"Карточка товара"} link={"/product-details"} name={"Карточка товара"}/>*/}
+            {/*        <ProductDetails />*/}
+            {/*    </div>*/}
+            {/*}}/>*/}
             <Route path="/cart" render={()=>{
                 return <div>
                     <BannerAria h3={"Корзина"} link={"/cart"} name={"Корзина"}/>
@@ -90,7 +92,9 @@ function App(props) {
                     <PageUnderConstruction />
                 </div>
             }}/>
-
+            <Route exact path="/cake/:bakery" render={()=>
+                <ProductDetails/>
+            }/>
           <Newsletter />
           <Footer />
           <SearchBox />

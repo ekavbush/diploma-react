@@ -13,14 +13,14 @@ const ProductsCatalog = (props)=>{
     let productsItems = [];
 
     for (let i = 0; i < productsCounts; i++) {
-            productsItems.push(<ProductCard
-                key={i}
-                name={products[i].name}
-                img={products[i].img}
-                price={products[i].price}
-                id = {products[i].id}
-                header_class={"col-lg-3 col-md-4 col-6"}
-            />);
+        productsItems.push(<ProductCard
+            key={i}
+            name={products[i].name}
+            img={products[i].img}
+            price={products[i].price}
+            id = {products[i].id}
+            header_class={"col-lg-3 col-md-4 col-6"}
+        />);
     }
     return(
         <section className="our_cakes_area p_100">
@@ -38,9 +38,9 @@ const ProductsCatalog = (props)=>{
                 </div>
             }} />
 
-            <Route exact path="/cake/:bakery" render={()=>
-                <ProductDetails />
-            }/>
+            {/*<Route exact path="/cake/:bakery" render={()=>*/}
+            {/*    <ProductDetails />*/}
+            {/*}/>*/}
         </section>
     );
 }

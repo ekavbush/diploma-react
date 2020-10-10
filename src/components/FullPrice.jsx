@@ -16,6 +16,7 @@ function FullPrice(props){
             name={products[i].name}
              description={products[i].description}
              price={products[i].price}
+             id={products[i].id}
          />);
         }else{
             productsItems2.push(<PriceItem
@@ -23,6 +24,7 @@ function FullPrice(props){
                 name={products[i].name}
                 description={products[i].description}
                 price={products[i].price}
+                id={products[i].id}
             />);
         }
      }
