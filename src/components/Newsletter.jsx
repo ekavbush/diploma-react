@@ -7,15 +7,15 @@ const Newsletter = ()=>{
                 <div className="row newsletter_inner">
                     <div className="col-lg-6">
                         <div className="news_left_text">
-                            <h4>Join our Newsletter list to get all the latest offers, discounts and other benefits</h4>
+                            <h4>Отправьте нам письмо, чтобы получать информацию о специальных предложениях, распродажах и других акциях.</h4>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="newsletter_form">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Enter your email address"/>
+                                <input type="text" className="form-control" placeholder="Введите свой email"/>
                                     <div className="input-group-append">
-                                        <button className="btn btn-outline-secondary" type="button">Subscribe Now
+                                        <button className="btn btn-outline-secondary" type="button">Подписаться
                                         </button>
                                     </div>
                             </div>

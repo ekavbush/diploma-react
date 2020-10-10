@@ -21,6 +21,7 @@ import OurBakeryIdea from "./components/OurBakeryIdea";
 import Error from "./components/Error";
 import PageUnderConstruction from "./components/PageUnderConstruction";
 import ProductsCatalog from "./components/ProductsCatalog";
+import ProductDetails from "./components/ProductDetails";
 
 function App(props) {
   return (
@@ -74,7 +75,7 @@ function App(props) {
             <Route path="/product-details" render={()=>{
                 return <div>
                     <BannerAria h3={"Карточка товара"} link={"/product-details"} name={"Карточка товара"}/>
-                    <PageUnderConstruction />
+                    <ProductDetails />
                 </div>
             }}/>
             <Route path="/cart" render={()=>{
@@ -89,7 +90,7 @@ function App(props) {
                     <PageUnderConstruction />
                 </div>
             }}/>
-          {/*<Newsletter />*/}
+          <Newsletter />
           <Footer />
           <SearchBox />
 
