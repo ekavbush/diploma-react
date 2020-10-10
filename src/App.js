@@ -42,7 +42,7 @@ function App(props) {
           <Route path="/cake" render={()=>{
                 return <div>
                     <BannerAria h3={"Наша выпечка"} link={"/cake"} name={"Наши вкусности"}/>
-                    <ProductsCatalog getProducts={props.getProducts} />
+                    <ProductsCatalog getProducts={props.getProducts}/>
                 </div>
           }}/>
           <Route path="/menu" render={()=>{
@@ -90,6 +90,7 @@ function App(props) {
                     <PageUnderConstruction />
                 </div>
             }}/>
+
           <Newsletter />
           <Footer />
           <SearchBox />

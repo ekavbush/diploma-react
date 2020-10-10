@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 const ProductCard = (props)=>{
     return(
@@ -9,7 +10,7 @@ const ProductCard = (props)=>{
                 </div>
                 <div className="cake_text">
                     <h4>{props.price}</h4>
-                    <h3>{props.name}</h3>
+                    <NavLink to={"/cake/bakery"+props.id}><h3>{props.name}</h3></NavLink>
                     <a className="pest_btn" href="#">В корзину</a>
                 </div>
             </div>
