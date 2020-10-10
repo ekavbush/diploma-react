@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const OurMission = ()=>{
     return(
@@ -24,10 +25,10 @@ const OurMission = ()=>{
                                 reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
                                 qui dolorem eum fugiat quo voluptas nulla pariatu</p>
                             <ul className="nav">
-                                <li><a href="#">Сладкая выпечка</a></li>
-                                <li><a href="#">Хлеб</a></li>
-                                <li><a href="#">Выпечка</a></li>
-                                <li><a href="#">Интересное</a></li>
+                                <li><NavLink to="/cake">Сладкая выпечка</NavLink></li>
+                                <li><NavLink to="/cake">Хлеб</NavLink></li>
+                                <li><NavLink to="/cake">Выпечка</NavLink></li>
+                                <li><NavLink to="/cake">Интересное</NavLink></li>
                             </ul>
                         </div>
                     </div>

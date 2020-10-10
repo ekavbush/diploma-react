@@ -3,6 +3,7 @@ import PriceItem from "./PriceItem";
 import ProductCard from "./ProductCard";
 import {Route} from "react-router-dom";
 import ProductDetails from "./ProductDetails";
+import BannerAria from "./BannerAria";
 
 const ProductsCatalog = (props)=>{
     let products = props.getProducts;
@@ -22,26 +23,28 @@ const ProductsCatalog = (props)=>{
             header_class={"col-lg-3 col-md-4 col-6"}
         />);
     }
-    return(
-        <section className="our_cakes_area p_100">
-            <Route exact path="/cake" render={()=>{
-                return <div className="container">
-                    <div className="main_title">
-                        <h2>Наша продукция</h2>
-                        <h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.</h5>
-                    </div>
-                    <div className="cake_feature_row row">
-                        {productsItems}
-                    </div>
-                </div>
-            }} />
+    return(<div>
 
-            {/*<Route exact path="/cake/:bakery" render={()=>*/}
-            {/*    <ProductDetails />*/}
-            {/*}/>*/}
-        </section>
+            <section className="our_cakes_area p_100">
+                <Route exact path="/cake" render={()=>{
+                    return <div className="container">
+                        <div className="main_title">
+                            <h2>Наша продукция</h2>
+                            <h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo.</h5>
+                        </div>
+                        <div className="cake_feature_row row">
+                            {productsItems}
+                        </div>
+                    </div>
+                }} />
+
+                {/*<Route exact path="/cake/:bakery" render={()=>*/}
+                {/*    <ProductDetails />*/}
+                {/*}/>*/}
+            </section>
+        </div>
     );
 }
 export default ProductsCatalog;

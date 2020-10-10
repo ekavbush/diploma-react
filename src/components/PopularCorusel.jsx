@@ -24,6 +24,7 @@ const PopularCorusel = ()=>{
                     img={"../img/cake-feature/c-feature-1.jpg"}
                     price={"150 р."}
                     header_class={"cake_feature_item"}
+                    id={"3"}
                 />
             </div>
             <div className="item">
@@ -32,6 +33,7 @@ const PopularCorusel = ()=>{
                     img={"../img/cake-feature/c-feature-2.jpg"}
                     price={"95 р."}
                     header_class={"cake_feature_item"}
+                    id={"3"}
                 />
             </div>
             <div className="item">
@@ -40,6 +42,7 @@ const PopularCorusel = ()=>{
                     img={"../img/cake-feature/c-feature-3.jpg"}
                     price={"... р."}
                     header_class={"cake_feature_item"}
+                    id={"3"}
                 />
             </div>
             <div className="item">
@@ -48,6 +51,7 @@ const PopularCorusel = ()=>{
                     img={"../img/cake-feature/c-feature-4.jpg"}
                     price={"... р."}
                     header_class={"cake_feature_item"}
+                    id={"3"}
                 />
             </div>
         </OwlCarousel>

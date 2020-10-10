@@ -2,15 +2,16 @@ import React from 'react';
 import ProductDetailsPrice from "./ProductDetailsPrice";
 import ProductDetailsTab from "./ProductDetailsTab";
 import {getProduct} from "../State";
+import BannerAria from "./BannerAria";
 
 const ProductDetails = ()=>{
     let idProd = window.location.pathname.split("/")[2];
     idProd = idProd.replaceAll("bakery", "");
     console.log(idProd);
-    let product = getProduct(+idProd);//так как id с нуля
+    let product = getProduct(+idProd);
 
-    return(<div>
-
+    return(<div style={{backgroundColor: 'pink'}}>
+            {/*<BannerAria h3={product.name} link={"/cake"} name={"Наша выпечка"}/>*/}
         <section className="product_details_area p_100">
         <div className="container">
 
