@@ -1,11 +1,13 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import TemporaryMessage from "./TemporaryMessage";
 
 
 const Top_Header = ()=>{
     return(
         <div className="top_header_area row m0">
             <div className="container">
+                <TemporaryMessage/>
                 <div className="float-right">
                     <ul className="h_social list_style">
                         <li><NavLink to="#"><i className="fa fa-facebook"></i></NavLink></li>
