@@ -39,7 +39,7 @@ const ProductsCatalog = (props)=>{
                             {productsItems}
                         </div>
                     </div>
-                }} />
+                }}/>
 
                 {/*<Route exact path="/cake/:bakery" render={()=>*/}
                 {/*    <ProductDetails />*/}

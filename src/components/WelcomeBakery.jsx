@@ -27,7 +27,8 @@ const WelcomeBakery = ()=>{
                         </div>
                         <div className="col-lg-6">
                             <div className="welcome_img">
-                                <img className="img-fluid" src="../img/cake-feature/welcome-right.jpg" alt="" />
+                                <img className="img-fluid" src="../img/cake-feature/portfolio-7.jpg" alt="" />
+                                <img className="img-fluid" src="../img/cake-feature/portfolio-5.jpg" alt="" />
                             </div>
                         </div>
                     </div>

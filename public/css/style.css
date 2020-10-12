@@ -1748,7 +1748,7 @@ i:before {
 /* Banner Area css
 ============================================================================================ */
 .banner_area {
-  background: url(../img/banner/banner-bg.jpg) no-repeat scroll center center;
+  background: url(../img/banner/banner-bg2.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
@@ -2669,7 +2669,10 @@ i:before {
 
 .discover_item_inner .discover_item p span {
   float: right;
-  color: #e3764b;
+  /*color: #e3764b;*/
+  /*EV begin*/
+  color: #800000;
+  /*EV end*/
   font-size: 20px;
   font-family: "Playfair Display", serif;
   font-weight: bold;

@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 import SearchBox from "./components/SearchBox";
 import WelcomeBakery from "./components/WelcomeBakery";
 import SpecialRecipes from "./components/SpecialRecipes";
-import Newsletter from "./components/Newsletter";
+import SubscribeYou from "./components/SubscribeYou";
 import {getProducts} from "./State";
 import FullPrice from "./components/FullPrice";
 import OurMission from "./components/OurMission";
@@ -22,7 +22,7 @@ import Error from "./components/Error";
 import PageUnderConstruction from "./components/PageUnderConstruction";
 import ProductsCatalog from "./components/ProductsCatalog";
 import ProductDetails from "./components/ProductDetails";
-import Carousel_1 from "./components/CarouserCook";
+
 
 
 function App(props) {
@@ -95,7 +95,7 @@ function App(props) {
             <Route path="/cake/:bakery" render={()=>
                 <ProductDetails/>
             }/>
-          <Newsletter />
+          <SubscribeYou />
           <Footer />
           <SearchBox />
 
