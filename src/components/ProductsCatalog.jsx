@@ -6,8 +6,9 @@ import ProductDetails from "./ProductDetails";
 import BannerAria from "./BannerAria";
 
 const ProductsCatalog = (props)=>{
+    console.log(window.location.pathname);
     let products = props.getProducts;
-    console.log(Object.values(products));
+    //console.log(Object.values(products));
     //console.log(Object.values(products).length);
     // let productsCounts = Object.key(prod1).length;
     let productsCounts = Object.values(products).length;

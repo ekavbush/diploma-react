@@ -92,7 +92,7 @@ function App(props) {
                     <PageUnderConstruction />
                 </div>
             }}/>
-            <Route exact path="/cake/:bakery" render={()=>
+            <Route path="/cake/:bakery" render={()=>
                 <ProductDetails/>
             }/>
           <Newsletter />
