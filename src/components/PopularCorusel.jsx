@@ -14,6 +14,7 @@ const PopularCorusel = ()=>{
         <OwlCarousel
             className="owl-theme"
             items="4"
+            // itemsMobile={[320,1]}
             autoplay
             loop
             dots
@@ -21,37 +22,37 @@ const PopularCorusel = ()=>{
             <div className="item">
                 <ProductCard
                     name={"Хлеб ржаной на закваске"}
-                    img={"../img/cake-feature/c-feature-1.jpg"}
+                    img={"../img/cake-feature/bakery6.jpg"}
                     price={"150 р."}
                     header_class={"cake_feature_item"}
-                    id={"3"}
+                    id={"1"}
                 />
             </div>
             <div className="item">
                 <ProductCard
                     name={"Домашний синабон"}
-                    img={"../img/cake-feature/c-feature-2.jpg"}
+                    img={"../img/cake-feature/bakery1.jpg"}
                     price={"95 р."}
                     header_class={"cake_feature_item"}
-                    id={"3"}
+                    id={"2"}
                 />
             </div>
             <div className="item">
                 <ProductCard
                     name={"Пирог с капустой"}
-                    img={"../img/cake-feature/c-feature-3.jpg"}
+                    img={"../img/cake-feature/bakery3.jpg"}
                     price={"... р."}
                     header_class={"cake_feature_item"}
-                    id={"3"}
+                    id={"5"}
                 />
             </div>
             <div className="item">
                 <ProductCard
-                    name={"Морковный кекс"}
-                    img={"../img/cake-feature/c-feature-4.jpg"}
-                    price={"... р."}
+                    name={"Кефирный хлеб"}
+                    img={"../img/cake-feature/bakery4.jpg"}
+                    price={"100 р."}
                     header_class={"cake_feature_item"}
-                    id={"3"}
+                    id={"4"}
                 />
             </div>
         </OwlCarousel>

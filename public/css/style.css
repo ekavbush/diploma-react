@@ -6657,8 +6657,12 @@ i:before {
 
 /*EV styles*/
 .bread-class:before{
-  content: url(../img/bread2.png);
-  opacity: 0.3;
+  /*content: url(../img/bread2.png);*/
+  content: url(../img/036_whole_wheat_bread.png);
+  /*color: white;*/
+  /*width: 70px;*/
+  /*height: 94px;*/
+  /*opacity: 0.3;*/
 }
 .my_img_size{ /*размер картинки в карточке товара*/
   width: 525px;

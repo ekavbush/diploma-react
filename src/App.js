@@ -22,6 +22,8 @@ import Error from "./components/Error";
 import PageUnderConstruction from "./components/PageUnderConstruction";
 import ProductsCatalog from "./components/ProductsCatalog";
 import ProductDetails from "./components/ProductDetails";
+import Contact from "./components/Contact";
+import Send from "./components/Send";
 
 
 
@@ -89,12 +91,18 @@ function App(props) {
             <Route path="/contact" render={()=>{
                 return <div>
                     <BannerAria h3={"Наши контакты"} link={"/contact"} name={"Наши контакты"}/>
-                    <PageUnderConstruction />
+                    <Contact />
                 </div>
             }}/>
             <Route path="/cake/:bakery" render={()=>
                 <ProductDetails/>
             }/>
+            <Route path="/send" render={()=>{
+                return <div>
+                    {/*<BannerAria h3={"Письмо отправлено"} link={"/"} name={"Письмо отправлено"}/>*/}
+                    <Send />
+                </div>
+            }}/>
           <SubscribeYou />
           <Footer />
           <SearchBox />

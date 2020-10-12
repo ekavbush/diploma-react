@@ -35,12 +35,12 @@ const Footer = ()=>{
                         <div className="col-lg-3 col-6">
                             <aside className="f_widget f_link_widget">
                                 <div className="f_title">
-                                    <h3>Время работы:</h3>
+                                    <h3>Мы открыты:</h3>
                                 </div>
                                 <ul className="list_style">
-                                    <li><NavLink to="#">Mon. : Fri.: 8 am - 8 pm</NavLink></li>
-                                    <li><NavLink to="#">Sat. : 9am - 4pm</NavLink></li>
-                                    <li><NavLink to="#">Sun. : Closed</NavLink></li>
+                                    <li><NavLink to="#">Понедельник – Воскресенье</NavLink></li>
+                                    <li><NavLink to="#">10:00 AM – 6:00 PM</NavLink></li>
+                                    <li><NavLink to="#">Работаем по предзаказу</NavLink></li>
                                 </ul>
                             </aside>
                         </div>
@@ -49,9 +49,9 @@ const Footer = ()=>{
                                 <div className="f_title">
                                     <h3>Связаться с нами</h3>
                                 </div>
-                                <h4>(1800) 574 9687</h4>
-                                <p>Justshiop Store <br/>256, baker Street,, New Youk, 5245</p>
-                                <h5>cakebakery@contact.co.in</h5>
+                                <h4>01372.466.790</h4>
+                                <p>Москва, <br/>  ул.Большой Коммунистический тупик <br/> дом 13</p>
+                                <h5>Деду@деревня.com</h5>
                             </aside>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ const Footer = ()=>{
 
                         <ul>
                             <li><h5><NavLink target="_blank" to="https://www.templateshub.net">Templates Hub</NavLink></h5></li>
-                            <li><span><i className="fa fa-umbrella fa-2x"></i>  Разработка сайта: EV</span></li>
+                            <li><span><i className="fa fa-umbrella fa-2x"></i>  Разработка сайта: EV <i className="fa fa-sun-o fa-2x"></i></span></li>
                         </ul>
 
                         <div className="float-right">
