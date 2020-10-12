@@ -34,7 +34,7 @@ function FullPrice(props){
                 <div className="price_list_inner">
                     <div className="single_pest_title">
                         <h2>Наш прайс-лист</h2>
-                        <p>Здесь Вы можете ознакомится с полным ассортментом нашей продукции и ценами на нее.</p>
+                        <p>Здесь Вы можете ознакомиться с полным ассортиментом нашей продукции и ценами на нее.</p>
                     </div>
                     <div className="row">
                         <div className="col-lg-6">

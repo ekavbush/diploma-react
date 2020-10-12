@@ -4,6 +4,21 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import ProductCard from "./ProductCard";
 
+const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    navText: ["Prev", "Next"],
+    loop: true,
+    responsive: {
+        0: {items: 1},
+        400: {items: 1},
+        600: {items: 2},
+        700: {items: 3}
+    }
+};
 const PopularCorusel = ()=>{
 
     return <div className="cake_feature_inner">
@@ -13,11 +28,11 @@ const PopularCorusel = ()=>{
         </div>
         <OwlCarousel
             className="owl-theme"
-            items="4"
-            // itemsMobile={[320,1]}
-            autoplay
-            loop
-            dots
+            // items="4"
+            // autoplay
+            // loop
+            // dots
+            {...options}
         >
             <div className="item">
                 <ProductCard
